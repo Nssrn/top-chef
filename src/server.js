@@ -6,13 +6,17 @@ var app = express();
 
 //app.get('/scrape', function (req, res) {
 
-    url = 'https://restaurant.michelin.fr/restaurants/france/restaurants-1-etoile-michelin/restaurants-2-etoiles-michelin/restaurants-3-etoiles-michelin';
+    var pages;
+    for(pages =1; pages < 36; pages ++){
+
+    url = 'https://restaurant.michelin.fr/restaurants/france/restaurants-1-etoile-michelin/restaurants-2-etoiles-michelin/restaurants-3-etoiles-michelin/page-' +pages ;
     var allRestaurants = [];
     request(url, function (error, response, html) {
         if (!error) {
             var $ = cheerio.load(html);
 
             var title;
+            
 
             $('.poi_card-display-title').filter(function () {
                 var data = $(this);
@@ -21,6 +25,8 @@ var app = express();
                 json.title = title;
                 allRestaurants.push(json);
             })
+           
+
         }
 
         fs.writeFile('output.json', JSON.stringify(allRestaurants, null, 4), function (err) {
@@ -30,6 +36,7 @@ var app = express();
         //res.send('Check your console!')
     })
 //})
+    }
 
 //app.listen('8081')
 console.log('Magic happens on port 8081');
