@@ -62,6 +62,3 @@ Thanks the [LaFourchette](https://www.lafourchette.com), you can book a restaura
 
 ![overview2](./img/2.png)
 
-
-
-[Uncopyrighted](http://zenhabits.net/uncopyright/)
