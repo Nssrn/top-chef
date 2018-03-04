@@ -2,7 +2,6 @@ var cheerio = require('cheerio');
 var request = require('request');
 var fs = require('fs');
 
-
 var data = fs.readFileSync("./RestaurantInfo.json", "utf-8");
 var restaurant = data.split("\n");
 
