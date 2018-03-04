@@ -2,11 +2,7 @@ var express = require('express');
 var app = express();
 var michelin = require('./michelin');
 
-var json = michelin.get();
-app.get('/restau_list', function(req,res){
-    res.send(json);
-    
-})
+
 
 
 //app.listen('8081')
