@@ -31,7 +31,7 @@ Thanks the [LaFourchette](https://www.lafourchette.com), you can book a restaura
 
 ![lafourchette](./img/lafourchette.png)
 
-## Objective 
+## Command 
 
 **Get the current deal for a France located Michelin starred restaurants.**
 
@@ -44,7 +44,7 @@ Thanks the [LaFourchette](https://www.lafourchette.com), you can book a restaura
 > npm install
 ```
 
-2. Find the starred restaurants on lafourchette.com :
+2. Find the starred restaurants on [LaFourchette](https://www.lafourchette.com) :
 ```sh
 > cd src
 > node lafourchette.js
@@ -58,9 +58,9 @@ Thanks the [LaFourchette](https://www.lafourchette.com), you can book a restaura
 
 ## Overview
 
-![1](./img/1.png)
+![overview1](./img/1.png)
 
-![2](./img/2.png)
+![overview2](./img/2.png)
 
 
 
