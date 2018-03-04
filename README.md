@@ -7,7 +7,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Introduction](#introduction)
-- [Objective](#objective)
+- [Command](#command)
 - [Overview](#overview)
 
 
